@@ -1,0 +1,834 @@
+/* 页面样式 */
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
+body{
+    width: 100%;
+    background: #CC8D8D;
+}
+.index-page{
+    min-height: 100vh;
+    min-width: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+/* 页面头部样式 */
+/* .page-header{
+    width: 100%;
+    background: #3A3B44;
+    position: fixed;
+    z-index: 1000;
+}
+.container-1000{
+    width: 1000px;
+    margin: 0 auto;
+}
+.page-header-content{
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.page-header-logo{
+    width: 130px;
+    height: 41px;
+    border: 1px dashed #FFFFFF;
+}
+.page-header-nav{
+    padding: 30px 243px 30px 47px;
+    display: inline-block;
+    font-size: 0;
+    white-space: nowrap;
+}
+a{
+    text-decoration: none;
+}
+.header-nav-item{
+    height: 15px;
+    font-size: 15px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 15px;
+    margin-right: 50px;
+}
+.header-nav-item:hover{
+    color: #58A673;
+}
+.header-nav-item:last-child{
+    margin-right: 0px;
+}
+.page-header-button{
+    width: 220px;
+    padding: 20px 0px 19px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+button{
+    cursor: pointer;
+    border: none;
+}
+.header-button-expert{
+    width: 100px;
+    height: 36px;
+    font-size: 15px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #58A673;
+    background: rgba(28, 163, 143, 0);
+    border: 1px solid #58A673;
+    border-radius: 4px;
+    line-height: 31px;
+}
+.header-button-employer{
+    width: 100px;
+    height: 36px;
+    font-size: 15px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #FFFFFF;
+    background: #58A673;
+    border: 1px solid #58A673;
+    border-radius: 4px;
+    box-shadow: 0px 1px 2px 0px rgba(30, 31, 40, 0.3);
+    line-height: 31px;
+} */
+/* 页面主体样式 */
+.page-body{
+    margin-top: 75px;
+}
+/* 横幅部分样式 */
+.banner-section{
+    width: 100%;
+    height: 455px;
+    text-align: center;
+    background: #000000;
+}
+.font-18px{
+    font-size: 18px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    line-height: 18px;
+}
+.banner-section-desc{
+    color: #B1B1B5;
+    padding-top: 57px;
+}
+.font-32px{
+    font-size: 32px;
+    font-family: PingFang SC;
+    font-weight: 500;
+    line-height: 32px;
+}
+.banner-section-title{
+    color: #FFFFFF;
+    margin-top: 36px;
+}
+.banner-section-bd{
+    height: 45px;
+    margin-top: 45px;
+}
+.banner-bd-text{
+    font-size: 15px;
+    font-family: PingFang SC;
+    font-weight: 500;
+    color: #58A673;
+    line-height: 24px;
+}
+.banner-section-ft{
+    font-size: 0;
+    margin: 58px auto 0px;
+    position: relative;
+}
+.ft-icon-left{
+    content: '';
+    width: 374px;
+    border-right: 374px solid #FFFFFF;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    opacity: 0.2;
+    position: absolute;
+    top: 7px;
+    left: 46px;
+}
+.banner-ft-text{
+    font-size: 14px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #B1B1B5;
+    line-height: 14px;
+}
+.ft-icon-right{
+    content: '';
+    width: 374px;
+    border-left: 374px solid #FFFFFF;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    opacity: 0.2;
+    position: absolute;
+    top: 7px;
+    right: 46px;
+}
+.banner-ft-img{
+    width: 850px;
+    height: 89px;
+    border: 1px dashed #FFFFFF;
+    margin-top: 19px;
+}
+/* 资源部分样式 */
+.resource-section{
+    width: 100%;
+    height: 470px;
+    text-align: center;
+    background: #F6F8FA;
+    margin-top: 6px;
+    margin-right: 1px;
+}
+.resource-section-title{
+    color: #3F464B;
+    padding-top: 68px;
+}
+.resourcer-section-desc{
+    color: #999999;
+    margin-top: 27px;
+}.resourcer-list{
+    margin-top: 61px;
+    font-size: 0;
+}
+.resource-item{
+    cursor: pointer;
+    margin-right: 140px;
+    display: inline-block;
+}
+.resource-item:first-child{
+    margin-left: 60px;
+}
+.resource-item:last-child{
+    margin-left: 5px;
+    margin-right: 55px;
+}
+.resource-item-img{
+    width: 200px;
+    height: 110px;
+    border: 1px dashed #000000;
+}
+.resource-item-title{
+    height: 18px;
+    font-size: 18px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #3F464B;
+    line-height: 18px;
+    margin-top: 19px;
+}
+.resource-item-desc{
+    height: 14px;
+    font-size: 14px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #999999;
+    line-height: 14px;
+    margin-top: 22px;
+}
+/* 人才部分样式 */
+.talents-section{
+    width: 100%;
+    height: 934px;
+    text-align: center;
+    background: #3D3E48;
+}
+.talents-section-title{
+    color: #FFFFFF;
+    padding-top: 63px;
+}
+.talents-section-desc{
+    color: #B1B1B5;
+    margin-top: 27px;
+}
+.talents-section-nav{
+    margin-top: 56px;
+    font-size: 0;
+}
+.talents-nav-item{
+    height: 16px;
+    font-size: 16px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #8A8B91;
+    line-height: 16px;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 81px;
+    position: relative;
+}
+.talents-nav-item.active{
+    color: #62BD82;
+    font-weight: 500;
+    margin-right: 37px;
+    margin-left: -36px;
+}
+.talents-nav-item:last-child{
+    margin-right: 37px;
+}
+.talents-nav-item:hover{
+    color: #62BD82;
+    font-weight: 500;
+}
+.horizontal{
+    content: "";
+    width: 120px;
+    height: 2px;
+    background: #62BD82;
+    margin-top: 23px;
+    display: none;
+}
+.horizontal.active{
+    display: block;
+}
+.talents-nav-item:hover .horizontal{
+    display: block;
+}
+.talents-section-list{
+    text-align: left;
+    font-size: 0;
+    margin-top: 74px;
+    display: flex;
+    justify-content: space-between;
+}
+.talents-card{
+    width: 313px;
+    height: 580px;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.09);
+    border-radius: 2px;
+}
+.talents-avatar{
+    width: 100%;
+    height: 250px;
+    border-radius: 2px 2px 0px 0px;
+}
+.talents-name{
+    height: 16px;
+    font-size: 16px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #3F464B;
+    line-height: 16px;
+    text-indent: 22px;
+    margin-top: 26px;
+}
+.talents-position{
+    height: 12px;
+    font-size: 12px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #999999;
+    line-height: 12px;
+    text-indent: 22px;
+    margin-top: 11px;
+}
+.talents-introduction{
+    height: 72px;
+    font-size: 12px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #3F464B;
+    line-height: 19px;
+    padding-left: 23px;
+    padding-right: 34px;
+    margin-top: 20px;
+}
+.talents-previous-work{
+    height: 12px;
+    font-size: 12px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #A9A9A9;
+    text-indent: 23px;
+    line-height: 12px;
+    margin-top: 37px;
+}
+.work-place-logo{
+    width: 129px;
+    height: 65px;
+    float: right;
+    margin-top: 14px;
+    margin-right: 92px;
+}
+.talents-card:first-child .work-place-logo{
+    width: 120px;
+    height: 60px;
+    border: 1px dashed #000000;
+    float: right;
+    margin-top: 16px;
+    margin-right: 93px;
+}
+.talents-button{
+    width: 313px;
+    height: 50px;
+    font-size: 16px;
+    font-family: PingFang SC;
+    font-weight: 500;
+    color: #FFFFFF;
+    background: #62BD82;
+    border-radius: 0px 0px 2px 2px;
+    margin-top: 7px;
+    opacity: 0;
+}
+.talents-button.active{
+    opacity: 1;
+}
+.talents-card:hover .talents-button{
+    opacity: 1;
+}
+.talents-card:first-child .talents-button{
+    margin-top: 10px;
+}
+/* 操作部分样式 */
+.operation-section{
+    width: 100%;
+    height: 1250px;
+    background: #F6F8FA;
+}
+.operation-section-title{
+    color: #3F464B;
+    text-align: center;
+    padding-top: 74px;
+}
+.operation-section-desc{
+    color: #999999;
+    text-align: center;
+    margin-top: 24px;
+}
+.operation-section-list{
+    margin-top: 61px;
+    margin-left: 12px;
+}
+.operation-item{
+    height: 231px;
+    margin-bottom: 19px;
+    display: flex;
+}
+.operation-item:nth-child(2){
+    margin-bottom: 29px;
+}
+.operation-item-serialno{
+    width: 64px;
+    height: 64px;
+    font-size: 32px;
+    font-family: PingFang SC;
+    font-weight: 300;
+    color: #FFFFFF;
+    line-height: 64px;
+    text-align: center;
+    background: #62BD82;
+    border-radius: 50%;
+    box-shadow: 0px 10px 10px 5px rgb(88 166 115 / 20%);
+    margin-top: 3px;
+}
+.serialno-arrow{
+    height: 164px;
+    margin-left: 34px;
+    margin-top: -1px;
+}
+.serialno-arrow-vertical{
+    width: 1px;
+    height: 164px;
+    background: #62BD82;
+}
+.serialno-arrow-direction{
+    width: 24px;
+    height: 24px;
+    border-top: 1.5px solid #62BD82;
+    border-left: 1.5px solid #62BD82;
+    transform: rotate(-135deg);
+    margin-top: -28px;
+    margin-left: -11.5px;
+}
+.operation-item-container{
+    width: 445px;
+    height: 127px;
+}
+.operation-item-container{
+    margin-left: 26px;
+    margin-top: 22px;
+}
+.operation-item-title{
+    height: 28px;
+    font-size: 28px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #3F464B;
+    line-height: 28px;
+}
+.operation-item-bd{
+    height: 83px;
+    font-size: 16px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #3F464B;
+    line-height: 30px;
+    margin-top: 18px;
+    margin-left: 1px;
+}
+.operation-item-img{
+    width: 310px;
+    height: 200px;
+    margin-left: 143px;
+}
+/* 独特部分样式 */
+.unique-section{
+    height: 800px;
+    text-align: center;
+    background: linear-gradient(0deg, #797A84, #34364A);
+}
+.unique-section-title{
+    color: #FFFFFF;
+    padding-top: 74px;
+}
+.unique-section-desc{
+    color: #B1B1B5;
+    padding-top: 26px;
+}
+.unique-section-table{
+    width: 1000px;
+    height: 510px;
+    font-size: 15px;
+    font-family: PingFang SC;
+    font-weight: 500;
+    color: #667080;
+    background: #FDFDFD;
+    border: 1px solid #FDFDFD;
+    border-radius: 10px;
+    opacity: 0.99;
+    margin-top: 61px;
+}
+th{
+    font-size: 15px;
+    font-family: PingFang SC;
+    font-weight: 500;
+    color: #3F464B;
+}
+th,td{
+    height: 73px;
+}
+th:first-child,td:first-child{
+    width: 312px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+th:nth-child(n+2),td:nth-child(n+2){
+    width: 228px;
+}
+th:last-child,td:last-child{
+    width: 232px;
+}
+.table-item-blank{
+    background: #F2F4F6;
+}
+.table-item-toppro{
+    background: #DDE3F0;
+}
+.table-item-employer,.table-item-platform{
+    background: #E3E8F2;
+}
+.table-time-content,.table-spending-content,.failure-rate-content{
+    background: #F3F5F8;
+}
+.table-quality-content,.table-mechanism-content,.table-cost-content{
+    background: #F1F3F7;
+}
+.content-serialno{
+    width: 25px;
+    height: 25px;
+    font-size: 13px;
+    font-family: PingFang SC;
+    font-weight: 500;
+    color: #305798;
+    background: #FFFFFF;
+    border: 1px solid rgba(48, 87, 152, 0.3);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-left: 31px;
+}
+.content-text{
+    font-size: 15px;
+    font-family: PingFang SC;
+    font-weight: 500;
+    color: #305798;
+    padding-left: 12px;
+}
+td{
+    background: #EEF2F9;
+}
+.table-time-week,.table-spending-zero,.failure-rate-low,.table-cost-none{
+    background: #EBF0F7;
+}
+.tick{
+    background: #CCEAD7;
+}
+.cross{
+    background: #EBC6CB;
+}
+.tick-img,.cross-img{
+    width: 31px;
+    height: 31px;
+}
+/* 效果部分样式 */
+.effect-section{
+    height: 580px;
+    text-align: center;
+    background: #FFFFFF;
+    margin-top: 12px;
+    margin-left: 3px;
+}
+.effect-section-title{
+    color: #3F464B;
+    padding-top: 62px;
+}
+.effect-section-desc{
+    color: #999999;
+    margin-top: 27px;
+}
+.effect-section-list{
+    margin-top: 75px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 0;
+}
+.effect-item-img{
+    width: 160px;
+    height: 160px;
+    border: 1px dashed #000000;
+}
+.effect-item-text{
+    color: #3F464B;
+    margin-top: 52px;
+}
+/* 故事部分样式 */
+.story-section{
+    height: 608px;
+    text-align: center;
+    background: #3D3E48;
+}
+.story-section-title{
+    color: #FFFFFF;
+    padding-top: 62px;
+}
+.story-section-desc{
+    color: #B1B1B5;
+    margin-top: 27px;
+}
+.story-section-list{
+    margin-top: 61px;
+    display: flex;
+    justify-content: space-between;
+}
+.story-item-img{
+    width: 313px;
+    height: 200px;
+    border: 1px dashed #FFFFFF;
+}
+.story-item-bd{
+    width: 313px;
+    height: 52px;
+    font-size: 16px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 28px;
+    margin-top: 20px;
+}
+.story-item-logo{
+    width: 84px;
+    height: 32px;
+    margin-top: 34px;
+}
+/* 客户部分样式 */
+.client-section{
+    height: 447px;
+    background: #F6F8FA;
+}
+.client-section-list{
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+.client-section-item{
+    width: 313px;
+    height: 330px;
+    background: rgba(228, 228, 228, 0);
+    border: 1px solid #E4E4E4;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 0;
+}
+.client-item-logo1{
+    width: 168px;
+    height: 53px;
+    border: 1px dashed #000000;
+    margin-top: 53px;
+}
+.client-item-logo2{
+    width: 108px;
+    height: 80px;
+    border: 1px dashed #000000;
+    margin-top: 34px;
+}
+.client-item-logo3{
+    width: 127px;
+    height: 64px;
+    border: 1px dashed #000000;
+    margin-top: 47px;
+}
+.client-item-bd{
+    height: 79px;
+    font-size: 16px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #3F464B;
+    line-height: 28px;
+    padding-left: 27px;
+    padding-right: 27px;
+}
+.client-section-item:first-child .client-item-bd{
+    margin-top: 44px;
+}
+.client-section-item:nth-child(2) .client-item-bd{
+    margin-top: 36px;
+}
+.client-section-item:last-child .client-item-bd{
+    margin-top: 39px;
+}
+.client-item-ft{
+    font-size: 14px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #667080;
+    margin-top: 42px;
+}
+.client-item-name{
+    line-height: 14px;
+}
+.client-item-url{
+    line-height: 14px;
+    margin-top: 7px;
+}
+/* 页面脚部样式 */
+/* .page-footer{
+    height: 322px;
+    background: #1D1A33;
+}
+.footer-section{
+    display: flex;
+    align-items: flex-start;
+}
+.logo-container{
+    margin: 73px 163px 0px 20px;
+}
+.footer-logo{
+    width: 130px;
+    height: 50px;
+    border: 1px dashed #FFFFFF;
+    cursor: pointer;
+}
+.about-container{
+    margin: 82px 97px 0px 0px;
+}
+.footer-about-title{
+    height: 16px;
+    font-size: 15px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #8A8B91;
+    line-height: 16px;
+    position: relative;
+}
+.footer-about-title::after{
+    content: "";
+    width: 33px;
+    height: 4px;
+    background: #2B2744;
+    position: absolute;
+    margin-top: 33px;
+    margin-left: -80px;
+}
+.font-14px{
+    font-size: 14px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+.footer-about-content{
+    width: 224px;
+    height: 78px;
+    line-height: 28px;
+    margin-top: 33px;
+}
+.nav-container{
+    margin: 82px 98px 0px 0px;
+}
+.footer-nav-title{
+    height: 15px;
+    font-size: 15px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #8A8B91;
+    line-height: 15px;
+    position: relative;
+}
+.footer-nav-title::after{
+    content: "";
+    width: 14px;
+    height: 4px;
+    background: #2B2744;
+    position: absolute;
+    margin-top: 33px;
+    margin-left: -29px;
+}
+.footer-nav-list{
+    margin-top: 41px;
+    margin-left: 1px;
+}
+.footer-nav-item{
+    line-height: 14px;
+    margin-bottom: 14px;
+    cursor: pointer;
+}
+.footer-nav-item:hover{
+    color: #58A673;
+}
+.contact-container{
+    margin-top: 82px;
+}
+.footer-contact-title{
+    height: 15px;
+    font-size: 15px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #8A8B91;
+    line-height: 15px;
+    position: relative;
+}
+.footer-contact-title::after{
+    content: "";
+    width: 33px;
+    height: 4px;
+    background: #2B2744;
+    position: absolute;
+    margin-top: 33px;
+    margin-left: -58px;
+}
+.footer-contact-list{
+    margin-top: 41px;
+    margin-left: 1px;
+}
+.footer-contact-item{
+    line-height: 14px;
+    margin-bottom: 14px;
+} */

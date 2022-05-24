@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录注册</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <div class="login-page">
+        <div class="page-header">
+            <img class="page-header-img" src="./img/login_logo.jpg">
+        </div>
+        <div class="page-body">
+            <div class="page-body-title">登录</div>
+            <div class="page-body-desc">欢迎回来，你可以使用密码或者手机短信验证码登录</div>
+            <div class="page-body-card">
+                <form class="login-form">
+                    <div class="form-input">
+                        <input class="input-box tel-number" type="tel" placeholder="手机号码" maxlength="11">
+                        <div class="input-password-container">
+                            <input class="input-box password" type="password" placeholder="登录密码">
+                            <span class="input-pwd-hint">请输入密码</span></div>
+                        </div>
+                    <div class="form-submit">
+                        <div class="submit-hint">
+                            <label class="submit-hint-checkbox">
+                                <div class="checkbox-input">
+                                    <div class="checkbox-input-tick"></div>
+                                    <input class="checkbox-input-hidden" type="checkbox">
+                                </div>
+                                <div class="checkbox-text">记住帐号</div>
+                            </label>
+                            <a class="submit-hint-forgetpwd" href="javascript:;">忘记密码？</a>
+                        </div>
+                        <div class="submit-box">
+                            <input class="submit-button" type="submit" value="登录">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="page-footer">
+            <span class="page-footer-text">还没有toppro账号？</span>
+            <a class="page-footer-link" href="javascript:;">立即注册</a>
+        </div>
+    </div>
+</body>
+</html>
