@@ -1,12 +1,4 @@
 /* 页面样式 */
-/* *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-} */
-body{
-    width: 100%;
-}
 .employer-page{
     min-height: 100vh;
     min-width: 1000px;
@@ -14,15 +6,13 @@ body{
     flex-direction: column;
 }
 /* 页面头部样式 */
-/* .page-header{
+.page-header{
     width: 100%;
     background: #3A3B44;
-    position: fixed;
+    position: -webkit-sticky;
+    position:sticky;
+    top: 0px;
     z-index: 1000;
-}
-.container-1000{
-    width: 1000px;
-    margin: 0 auto;
 }
 .page-header-content{
     height: 75px;
@@ -33,16 +23,12 @@ body{
 .page-header-logo{
     width: 130px;
     height: 41px;
-    border: 1px dashed #FFFFFF;
 }
 .page-header-nav{
     padding: 30px 243px 30px 47px;
     display: inline-block;
     font-size: 0;
     white-space: nowrap;
-}
-a{
-    text-decoration: none;
 }
 .header-nav-item{
     height: 15px;
@@ -65,10 +51,6 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-button{
-    cursor: pointer;
-    border: none;
 }
 .header-button-expert{
     width: 100px;
@@ -94,64 +76,471 @@ button{
     border-radius: 4px;
     box-shadow: 0px 1px 2px 0px rgba(30, 31, 40, 0.3);
     line-height: 31px;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+/* 页面主体样式 */
+/* 横幅部分样式 */
+.banner-section{
+    width: 100%;
+    height: 645px;
+    text-align: center;
+    background: #000000;
+}
+.banner-section-desc{
+    color: #B1B1B5;
+    padding-top: 57px;
+}
+.banner-section-title{
+    color: #FFFFFF;
+    margin-top: 35px;
+}
+.banner-section-content{
+    height: 45px;
+    margin-top: 45px;
+}
+.banner-content-text{
+    font-size: 15px;
+    font-family: PingFang SC;
+    font-weight: 500;
+    color: #58A673;
+    line-height: 15px;
+    margin-bottom: 15px;
+}
+.banner-section-list{
+    margin-top: 73px;
+    display: flex;
+    justify-content: space-around;
+}
+.banner-section-item{
+    font-size: 0;
+}
+.banner-item-img{
+    width: 180px;
+    height: 110px;
+}
+.banner-item-text{
+    height: 17px;
+    font-size: 18px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #B1B1B5;
+    line-height: 17px;
+    margin-top: 9px;
+}
+.banner-section-button{
+    width: 240px;
+    height: 53px;
+    font-size: 22px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #58A673;
+    background: rgba(98, 189, 130, 0);
+    border: 1px solid #58A673;
+    border-radius: 4px;
+    margin-top: 67px;
+}
+.banner-section-button:hover{
+    color: #FFFFFF;
+    background: #58A673;
+}
+/* 机制部分样式 */
+.mechanism-section{
+    width: 100%;
+    height: 590px;
+    text-align: center;
+    background: linear-gradient(0deg, #30323E, #3E436D);
+}
+.mechanism-section-title{
+    color: #FFFFFF;
+    padding-top: 74px;
+}
+.mechanism-section-desc{
+    color: #B1B1B5;
+    margin-top: 27px;
+}
+.mechanism-section-img{
+    width: 957px;
+    height: 340px;
+    margin-top: 38px;
+    margin-bottom: 61px;
+}
+/* 原因部分样式 */
+.reason-section{
+    height: 800px;
+    text-align: center;
+    background: #E1E6EC;
+}
+.reason-section-title{
+    color: #3F464B;
+    padding-top: 74px;
+}
+.reason-section-desc{
+    color: #999999;
+    margin-top: 26px;
+}
+.reason-section-table{
+    width: 1000px;
+    height: 510px;
+    font-size: 15px;
+    font-family: PingFang SC;
+    font-weight: 500;
+    color: #667080;
+    background: #FDFDFD;
+    border: 1px solid #FDFDFD;
+    border-radius: 10px;
+    opacity: 0.99;
+    margin-top: 60px;
+}
+th{
+    font-size: 15px;
+    font-family: PingFang SC;
+    font-weight: 500;
+    color: #3F464B;
+}
+th,td{
+    height: 70px;
+}
+th:first-child,td:first-child{
+    width: 312px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+th:nth-child(n+2),td:nth-child(n+2){
+    width: 228px;
+}
+th:last-child,td:last-child{
+    width: 232px;
+}
+.table-item-blank{
+    background: #F2F4F6;
+}
+.table-item-toppro{
+    background: #DDE3F0;
+}
+.table-item-employer,.table-item-platform{
+    background: #E3E8F2;
+}
+.table-time-content,.table-spending-content,.failure-rate-content{
+    background: #F3F5F8;
+}
+.table-quality-content,.table-mechanism-content,.table-cost-content{
+    background: #F1F3F7;
+}
+.content-serialno{
+    width: 25px;
+    height: 25px;
+    font-size: 13px;
+    font-family: PingFang SC;
+    font-weight: 500;
+    color: #305798;
+    background: #FFFFFF;
+    border: 1px solid rgba(48, 87, 152, 0.3);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-left: 31px;
+}
+.content-text{
+    font-size: 15px;
+    font-family: PingFang SC;
+    font-weight: 500;
+    color: #305798;
+    padding-left: 12px;
+}
+td{
+    background: #EEF2F9;
+}
+.table-time-week,.table-spending-zero,.failure-rate-low,.table-cost-none{
+    background: #EBF0F7;
+}
+.tick{
+    background: #CCEAD7;
+}
+.cross{
+    background: #EBC6CB;
+}
+.tick-img,.cross-img{
+    width: 31px;
+    height: 31px;
+}
+/* 操作部分样式 */
+.operation-section{
+    width: 100%;
+    height: 1250px;
+    background: #F6F8FA;
+}
+.operation-section-title{
+    color: #3F464B;
+    text-align: center;
+    padding-top: 74px;
+}
+.operation-section-desc{
+    color: #999999;
+    text-align: center;
+    margin-top: 25px;
+}
+.operation-section-list{
+    margin-top: 71px;
+}
+.operation-item{
+    height: 200px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.operation-item-serialno{
+    width: 64px;
+    height: 64px;
+    font-size: 32px;
+    font-family: PingFang SC;
+    font-weight: 300;
+    color: #FFFFFF;
+    line-height: 64px;
+    text-align: center;
+    background: #62BD82;
+    border-radius: 50%;
+    box-shadow: 0px 10px 10px 5px rgb(88 166 115 / 20%);
+    float: left;
+    margin-top: -3px;
+    margin-left: 4px;
+}
+.operation-item-container{
+    width: 454px;
+    height: 62px;
+    margin-left: 90px;
+    margin-top: 6px;
+}
+.operation-item-title{
+    height: 16px;
+    font-size: 16px;
+    font-family: PingFang SC;
+    font-weight: 500;
+    color: #58A673;
+    line-height: 16px;
+}
+.operation-item-desc{
+    height: 36px;
+    font-size: 12px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #999999;
+    line-height: 20px;
+    margin-top: 10px;
+}
+.operation-item-left-bottom{
+    width: 550px;
+    border-top: 1px solid #62BD82;
+    margin-top: 21px;
+}
+.operation-item-content{
+    width: 530px;
+    height: 87px;
+    font-size: 13px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #3F464B;
+    line-height: 23px;
+    margin-top: 9px;
+    margin-left: 14px;
+}
+.operation-item-img{
+    width: 310px;
+    height: 200px;
+}
+/* 合作部分样式 */
+.cooperation-section{
+    height: 710px;
+    text-align: center;
+    background: #3D3E48;
+}
+.cooperation-section-title{
+    color: #FFFFFF;
+    padding-top: 69px;
+}
+.cooperation-section-desc{
+    color: #B1B1B5;
+    margin-top: 27px;
+}
+.cooperation-section-nav{
+    margin-top: 54px;
+    font-size: 0;
+}
+.operation-nav-item{
+    height: 16px;
+    font-size: 16px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #8A8B91;
+    line-height: 16px;
+    display: inline-block;
+    margin-right: 82px;
+}
+.operation-nav-item:last-child{
+    margin-right: 0;
+}
+.operation-nav-item.active{
+    color: #62BD82;
+    margin-left: -45px;
+    margin-right: 54px;
+}
+.nav-item-icon{
+    width: 120px;
+    height: 2px;
+    background: #62BD82;
+    margin-top: 23px;
+    display: none;
+}
+.operation-nav-item.active .nav-item-icon{
+    display: block;
+}
+.operation-nav-item:hover{
+    color: #62BD82;
+}
+.operation-nav-item:hover .nav-item-icon{
+    display: block;
+}
+.cooperation-section-content{
+    border-top: 1px solid #4D4D57;
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+.cooperation-content-left{
+    text-align: left;
+    margin-top: 91px;
+}
+.cooperation-content-title{
+    font-size: 28px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 26px;
+}
+.cooperation-content-desc{
+    height: 14px;
+    font-size: 14px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #8A8B91;
+    line-height: 14px;
+    padding-left: 1px;
+    margin-top: 25px;
+}
+.cooperation-content-icon{
+    width: 33px;
+    height: 4px;
+    background: #54555C;
+    margin-top: 33px;
+}
+.cooperation-content-text{
+    width: 602px;
+    height: 50px;
+    font-size: 14px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 28px;
+    margin-top: 24px;
+}
+.cooperation-content-button{
+    width: 160px;
+    height: 50px;
+    font-size: 18px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #58A673;
+    background: rgba(98, 189, 130, 0);
+    border: 1px solid #58A673;
+    border-radius: 4px;
+    margin-top: 52px;
+}
+.cooperation-content-button:hover{
+    color: #FFFFFF;
+    background: #58A673;
+}
+.cooperation-content-img{
+    width: 320px;
+    height: 210px;
+    margin-top: 79px;
+}
+/* faq部分样式 */
+.faq-section{
+    height: 884px;
+    background: #F6F8FA;
+    text-align: center;
+}
+.faq-section-title{
+    color: #3F464B;
+    line-height: 27px;
+    padding-top: 77px;
+}
+.faq-section-desc{
+    color: #999999;
+    margin-top: 32px;
+}
+.faq-section-list{
+    margin-top: 57px;
+    text-align: left;
+}
+.faq-section-item{
+    border-bottom: 1px solid #E4E4E4;
+    margin-top: 25px;
+}
+.faq-section-item:nth-child(2n){
+    margin-top: 24px;
+}
+.faq-item-title{
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    font-family: PingFang SC;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 20px;
+    background: #58A673;
+    border-radius: 4px;
+    float: left;
+    margin-right: 8px;
+}
+.faq-item-a .faq-item-title{
+    margin-right: 9px;
+}
+.faq-item-q .faq-item-content{
+    font-size: 14px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #3F464B;
+    line-height: 15px;
+    padding-top: 4px;
+}
+.faq-item-a{
+    margin-top: 14px;
+}
+.faq-item-a .faq-item-title{
+    margin-top: 7px;
+}
+.faq-item-a .faq-item-content{
+    font-size: 14px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #667080;
+    line-height: 28px;
+    padding-top: 3px;
+    margin-left: 29px;
+    margin-bottom: 21px;
+}
+.faq-section-item:nth-child(2) .faq-item-a .faq-item-content{
+    margin-bottom: 14px;
+}
+.faq-section-item:nth-child(4) .faq-item-a .faq-item-content{
+    margin-bottom: 18px;
+}
+.faq-section-item:last-child{
+    border-bottom: 0;
+}
 /* 页面脚部样式 */
-/* .page-footer{
+.page-footer{
     height: 322px;
     background: #1D1A33;
 }
@@ -165,7 +554,6 @@ button{
 .footer-logo{
     width: 130px;
     height: 50px;
-    border: 1px dashed #FFFFFF;
     cursor: pointer;
 }
 .about-container{
@@ -262,4 +650,4 @@ button{
 .footer-contact-item{
     line-height: 14px;
     margin-bottom: 14px;
-} */
+}
